@@ -1,0 +1,15 @@
+h1 a,h2 a{
+    color: #DE781F;
+}
+
+body {
+    padding-left: 15px;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.page-header{
+    margin-top: 0;
+    padding: 20px;
+    background-color: red;
+    border-radius:10px;
+}
