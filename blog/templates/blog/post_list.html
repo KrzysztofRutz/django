@@ -6,12 +6,8 @@
 </head>
 <body>
     <div>
-        <h1>
-             Witam na stronie bloga!
-        </h1>
-        <h2>
-            Blog o programowaniu
-        </h2>
+        <h1>Witam na stronie bloga!</h1>
+        <h2>Blog o programowaniu</h2>
     </div>
 <em>
     Wyróżnienie
@@ -20,10 +16,13 @@
     href="https://strefakursow.pl">LINK
 </a>
     <div>
-        <ul>
-            <li> pierwszy </li>
-            <li> drugi </li>
-        </ul>
+        <p>Tutaj lista postów:</p>
+       {% for post in posts %}
+        <b>------</b>
+        <p>opublikowany: {{ post.publish_date }}</p>
+        <h2><a href=" ">{{ post.title }}</a></h2>
+        <em>{{ post.text|linebreaksbr }}</em>
     </div>
+    {% endfor %}
 </body>
 </html>
